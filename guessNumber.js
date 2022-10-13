@@ -43,7 +43,7 @@ function displayGuesses(guess) {
   userInputElm.value = "";
   guessSlot.innerHTML += `${guess}  `;
   numGuesses++;
-  remaining.innerHTML = `${11 - numGuesses}  `;
+  remaining.innerHTML = `${5 - numGuesses}  `;
 }
 
 if (playGame) {
@@ -93,7 +93,7 @@ function newGame() {
     numGuesses = 1;
     guessSlot.innerHTML = "";
     lowOrHigh.innerHTML = "";
-    remaining.innerHTML = `${11 - numGuesses}  `;
+    remaining.innerHTML = `${5 - numGuesses}  `;
     userInputElm.removeAttribute("disabled");
     startOver.removeChild(p);
     playGame = true;
