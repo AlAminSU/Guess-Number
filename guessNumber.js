@@ -25,7 +25,7 @@ function validateGuess(guess) {
     previousGuesses.push(guess);
 
     //Check if game is over
-    if (numGuesses === 2) {
+    if (numGuesses === 5) {
       displayGuesses(guess);
       displayMessage(`Game Over! Number was ${randomNumber}`);
       endGame();
